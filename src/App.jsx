@@ -1,16 +1,22 @@
-import './App.css'
-import Header from './components/Header'
-import Content from './components/Content'
-import LaundrySystem from './components/laundrySystem'
+// App.jsx
+import Header from './components/Header';
+import LaundrySystem from './components/LaundrySystem';
+import SecuritySystem from './components/SecuritySystem';
+import WhyUs from './components/WhyUs';
+import Footer from './components/Footer';
+import Content from './components/Content';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Header />
-      <Content />
+      <Content/>
       <LaundrySystem />
+      <SecuritySystem />
+      <WhyUs />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
